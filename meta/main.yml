@@ -1,6 +1,7 @@
 ---
 galaxy_info:
   author: Eric Magalhães
+  role_name: beats
   description: Ansible role for isntalling Beats on Ubuntu
   company: JobScore
   license: license (GPLv3)
