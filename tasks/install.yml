@@ -11,6 +11,13 @@
     - filebeat_config is defined
     - package == "filebeat"
 
+- name: Getting auditbeat configuration
+  set_fact:
+    package_config: "{{ auditbeat_config }}"
+  when:
+    - auditbeat_config is defined
+    - package == "auditbeat"
+
 - name: Getting metricbeat configuration
   set_fact:
     package_config: "{{ metricbeat_config }}"
